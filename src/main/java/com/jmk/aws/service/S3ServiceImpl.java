@@ -37,7 +37,6 @@ public class S3ServiceImpl implements S3Service{
     private AmazonS3 amazonS3;
     @Value("${amazon.bucketName}")
 	private String bucketName;
-    
     private static final String FORWARD_SLASH="/";
 
     public List<PutObjectResult> uploadFile(MultipartFile[] multipartFiles) {

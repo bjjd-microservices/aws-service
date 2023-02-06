@@ -11,7 +11,7 @@ import com.amazonaws.services.s3.model.PutObjectResult;
 public interface S3Service {
 	public PutObjectResult uploadFile(String category, String id, String filename, MultipartFile multipartFile);
 	
-	public List<PutObjectResult> uploadFile(MultipartFile[] multipartFiles);
+	public List<PutObjectResult> uploadFiles(MultipartFile[] multipartFiles);
 	
 	public ResponseEntity<byte[]> download(String key) throws IOException;
 }
